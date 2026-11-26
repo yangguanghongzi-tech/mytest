@@ -1,0 +1,31 @@
+package com.learning.platform.common;
+
+import lombok.Getter;
+import org.springframework.http.HttpStatus;
+
+@Getter
+public class BizException extends RuntimeException {
+
+    private final HttpStatus status;
+
+    public BizException(HttpStatus status, String message) {
+        super(message);
+        this.status = status;
+    }
+
+    public static BizException badRequest(String message) {
+        return new BizException(HttpStatus.BAD_REQUEST, message);
+    }
+
+    public static BizException notFound(String message) {
+        return new BizException(HttpStatus.NOT_FOUND, message);
+    }
+
+    public static BizException conflict(String message) {
+        return new BizException(HttpStatus.CONFLICT, message);
+    }
+
+    public static BizException unauthorized(String message) {
+        return new BizException(HttpStatus.UNAUTHORIZED, message);
+    }
+}

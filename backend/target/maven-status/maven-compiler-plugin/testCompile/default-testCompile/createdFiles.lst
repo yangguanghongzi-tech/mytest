@@ -1,0 +1,4 @@
+com/learning/platform/TenantIsolationTest.class
+com/learning/platform/InMemoryStorage.class
+com/learning/platform/storage/LocalStorageControllerTest.class
+com/learning/platform/TenantIsolationTest$Cfg.class

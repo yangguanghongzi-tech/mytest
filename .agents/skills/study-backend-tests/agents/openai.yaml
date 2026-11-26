@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study 后端测试"
+  short_description: "运行、诊断、修复并完整复测 Study 项目的后端测试"
+  default_prompt: "Use $study-backend-tests to run the complete backend test suite, fix any failures, and confirm the final result."

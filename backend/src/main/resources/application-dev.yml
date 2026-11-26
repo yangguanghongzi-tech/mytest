@@ -1,0 +1,6 @@
+app:
+  auth:
+    mode: ${AUTH_MODE:dev}
+logging:
+  level:
+    com.learning.platform: debug

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study 平台维护"
+  short_description: "维护并总结 Study 后端、管理端、H5 的逻辑与已知问题"
+  default_prompt: "Use $study-platform-maintenance to diagnose or extend the Study learning platform and preserve its verified project conventions."
